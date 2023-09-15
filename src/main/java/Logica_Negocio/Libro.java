@@ -13,6 +13,7 @@ public class Libro {
     public String Autor ;
     public String Mes_publicacion ;
     public String Dia_publicacion ;
+    public String Tematica ;
     public int Numero_paginas ;
     public  int Año_publicacion ;
     
@@ -20,15 +21,21 @@ public class Libro {
         
     }
 
-    public Libro(String Titulo, String Autor, String Mes_publicacion, String Dia_publicacion, int Numero_paginas, int Año_publicacion) {
+    public Libro(String Titulo, String Autor, String Mes_publicacion, String Dia_publicacion, String Tematica ,int Numero_paginas, int Año_publicacion) {
         this.Titulo = Titulo;
         this.Autor = Autor;
         this.Mes_publicacion = Mes_publicacion;
         this.Dia_publicacion = Dia_publicacion;
         this.Numero_paginas = Numero_paginas;
         this.Año_publicacion = Año_publicacion;
+        this.Tematica= Tematica ;
     }
 
+    public void setTematica(String Tematica) {
+        this.Tematica = Tematica;
+    }
+
+    
     public void setTitulo(String Titulo) {
         this.Titulo = Titulo;
     }
@@ -75,6 +82,10 @@ public class Libro {
 
     public int getAño_publicacion() {
         return Año_publicacion;
+    }
+
+    public String getTematica() {
+        return Tematica;
     }
     
 }
