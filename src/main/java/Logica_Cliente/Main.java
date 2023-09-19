@@ -23,6 +23,7 @@ public class Main {
         String Mes_publicacion = "" ;
         String Dia_publicacion = "";
         String Tematica = "" ;
+        String Ciudad_de_publicacion="";
         int Numero_paginas = 0;
         int Año_publicacion = 0 ;
         int año_actual = 2023 ;
@@ -53,6 +54,10 @@ public class Main {
         Tematica =scan.nextLine();
         objlibro.setTematica(Tematica);
         
+        System.out.println("Digite la ciudad de publicacion del libro");
+        Ciudad_de_publicacion=scan.nextLine();
+        objlibro.setCiudad_de_publicacion(Ciudad_de_publicacion);
+        
         System.out.println("diguite el año en que se publico");
         Año_publicacion = scan.nextInt();
         objlibro.setAño_publicacion(Año_publicacion);
@@ -66,6 +71,7 @@ public class Main {
         System.out.println("el titulo del libro es :"+"\t"+objlibro.getTitulo());
         System.out.println("el autor del libro es  :"+"\t"+objlibro.getAutor());
         System.out.println("la tematica del libro es :"+"\t"+objlibro.getTematica());
+        System.out.println("La ciudad de publicacion del libro es:"+"\t"+objlibro.getCiudad_de_publicacion());
         System.out.println("el numero de paginas es :"+"\t"+objlibro.getNumero_paginas());
         System.out.println("la fecha de publicacion es  :"+"\t"+objlibro.getDia_publicacion()+"/"+objlibro.getMes_publicacion()+ "/ "+objlibro.getAño_publicacion());        
         System.out.println("la vigencia del libro es  :"+"\t"+vigencia_libro+"\t años" );      

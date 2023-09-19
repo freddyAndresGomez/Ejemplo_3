@@ -14,28 +14,27 @@ public class Libro {
     public String Mes_publicacion ;
     public String Dia_publicacion ;
     public String Tematica ;
+    public String Ciudad_de_publicacion;
     public int Numero_paginas ;
     public  int Año_publicacion ;
+    
     
     public Libro (){  
         
     }
 
-    public Libro(String Titulo, String Autor, String Mes_publicacion, String Dia_publicacion, String Tematica ,int Numero_paginas, int Año_publicacion) {
+    public Libro(String Titulo, String Autor, String Mes_publicacion, String Dia_publicacion, String Tematica, String Ciudad_de_publicacion, int Numero_paginas, int Año_publicacion) {
         this.Titulo = Titulo;
         this.Autor = Autor;
         this.Mes_publicacion = Mes_publicacion;
         this.Dia_publicacion = Dia_publicacion;
+        this.Tematica = Tematica;
+        this.Ciudad_de_publicacion = Ciudad_de_publicacion;
         this.Numero_paginas = Numero_paginas;
         this.Año_publicacion = Año_publicacion;
-        this.Tematica= Tematica ;
     }
+    //setters
 
-    public void setTematica(String Tematica) {
-        this.Tematica = Tematica;
-    }
-
-    
     public void setTitulo(String Titulo) {
         this.Titulo = Titulo;
     }
@@ -52,13 +51,24 @@ public class Libro {
         this.Dia_publicacion = Dia_publicacion;
     }
 
+    public void setTematica(String Tematica) {
+        this.Tematica = Tematica;
+    }
+
+    public void setCiudad_de_publicacion(String Ciudad_de_publicacion) {
+        this.Ciudad_de_publicacion = Ciudad_de_publicacion;
+    }
+
     public void setNumero_paginas(int Numero_paginas) {
         this.Numero_paginas = Numero_paginas;
     }
 
     public void setAño_publicacion(int Año_publicacion) {
         this.Año_publicacion = Año_publicacion;
+        
     }
+    
+    //getters
 
     public String getTitulo() {
         return Titulo;
@@ -76,6 +86,14 @@ public class Libro {
         return Dia_publicacion;
     }
 
+    public String getTematica() {
+        return Tematica;
+    }
+
+    public String getCiudad_de_publicacion() {
+        return Ciudad_de_publicacion;
+    }
+
     public int getNumero_paginas() {
         return Numero_paginas;
     }
@@ -83,9 +101,11 @@ public class Libro {
     public int getAño_publicacion() {
         return Año_publicacion;
     }
-
-    public String getTematica() {
-        return Tematica;
-    }
     
+
+    
+    
+
+   
+   
 }
